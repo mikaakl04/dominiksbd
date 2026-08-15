@@ -1,0 +1,217 @@
+.decor {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+/* ---------- Paris ---------- */
+.decor-paris__flag {
+  position: absolute;
+  top: 4.5rem;
+  right: 5rem;
+  display: flex;
+  width: clamp(90px, 11vw, 160px);
+  height: clamp(60px, 7.5vw, 108px);
+  border-radius: 3px;
+  overflow: hidden;
+  opacity: 0.5;
+  box-shadow: 0 10px 30px -12px rgba(0, 0, 0, 0.7);
+  animation: flagWave 7s ease-in-out infinite;
+  transform-origin: left center;
+}
+.decor-paris__flag span {
+  flex: 1;
+}
+.decor-paris__flag span:nth-child(1) {
+  background: #2b4ea2;
+}
+.decor-paris__flag span:nth-child(2) {
+  background: #f2ede2;
+}
+.decor-paris__flag span:nth-child(3) {
+  background: #c5303c;
+}
+
+@keyframes flagWave {
+  0%, 100% { transform: skewY(0deg) scaleX(1); }
+  50% { transform: skewY(-1.6deg) scaleX(0.98); }
+}
+
+.decor-paris__map {
+  position: absolute;
+  left: -8rem;
+  top: 2rem;
+  width: clamp(280px, 40vw, 560px);
+  color: var(--chapter-accent);
+  opacity: 0.16;
+  animation: mapDrift 40s linear infinite;
+}
+@keyframes mapDrift {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.decor-paris__tower {
+  position: absolute;
+  right: 6rem;
+  bottom: 3rem;
+  height: clamp(140px, 20vw, 280px);
+  color: var(--chapter-accent);
+  opacity: 0.22;
+}
+
+/* ---------- Italien ---------- */
+.decor-lemon {
+  position: absolute;
+  width: clamp(34px, 4.5vw, 62px);
+  color: #f5c542;
+  opacity: 0.55;
+  animation: lemonFloat 14s ease-in-out infinite;
+}
+.decor-lemon--0 { top: 5rem; left: 3rem; animation-delay: 0s; }
+.decor-lemon--1 { top: 12rem; right: 7rem; animation-delay: -3s; }
+.decor-lemon--2 { top: 26rem; left: 6rem; animation-delay: -6s; }
+.decor-lemon--3 { bottom: 8rem; right: 5rem; animation-delay: -9s; }
+.decor-lemon--4 { bottom: 18rem; left: 4rem; animation-delay: -12s; }
+
+@keyframes lemonFloat {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  50% { transform: translateY(-22px) rotate(9deg); }
+}
+
+.decor-italien__volcano {
+  position: absolute;
+  right: 3rem;
+  top: 6rem;
+  width: clamp(200px, 30vw, 440px);
+  color: var(--chapter-accent);
+  opacity: 0.2;
+}
+
+.decor-places {
+  position: absolute;
+  top: 5rem;
+  right: 3rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+.decor-places li {
+  font-family: var(--font-mono);
+  font-size: 0.66rem;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: var(--chapter-accent);
+  opacity: 0;
+  animation: placeIn 6s ease-in-out infinite;
+}
+@keyframes placeIn {
+  0%, 70%, 100% { opacity: 0.25; transform: translateX(6px); }
+  15%, 45% { opacity: 0.95; transform: translateX(0); }
+}
+
+/* ---------- Winter ---------- */
+.decor-frost {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at 12% 18%, rgba(200, 235, 255, 0.16), transparent 26%),
+    radial-gradient(circle at 84% 30%, rgba(200, 235, 255, 0.12), transparent 24%),
+    radial-gradient(circle at 50% 88%, rgba(200, 235, 255, 0.1), transparent 30%);
+  animation: frostPulse 12s ease-in-out infinite;
+}
+@keyframes frostPulse {
+  0%, 100% { opacity: 0.6; }
+  50% { opacity: 1; }
+}
+
+/* ---------- Sommer ---------- */
+.decor-sun {
+  position: absolute;
+  top: -18%;
+  right: -8%;
+  width: clamp(320px, 46vw, 720px);
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(255, 176, 84, 0.3) 0%, rgba(255, 130, 60, 0.12) 42%, transparent 68%);
+  animation: sunBreathe 16s ease-in-out infinite;
+}
+@keyframes sunBreathe {
+  0%, 100% { transform: scale(1); opacity: 0.85; }
+  50% { transform: scale(1.09); opacity: 1; }
+}
+
+/* ---------- Silvester ---------- */
+.decor-firework {
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: #f7c86e;
+  box-shadow:
+    0 0 0 0 rgba(247, 200, 110, 0.9),
+    0 0 24px 6px rgba(247, 200, 110, 0.55);
+  animation: fireworkBurst 5.5s ease-out infinite;
+}
+.decor-firework--1 { top: 7rem; left: 14%; animation-delay: 0s; }
+.decor-firework--2 { top: 4rem; right: 24%; animation-delay: -1.9s; background: #ff9d5c; box-shadow: 0 0 24px 6px rgba(255, 157, 92, 0.5); }
+.decor-firework--3 { top: 16rem; right: 42%; animation-delay: -3.6s; }
+
+@keyframes fireworkBurst {
+  0% { transform: scale(0.4); opacity: 0; }
+  12% { opacity: 1; }
+  55% { transform: scale(9); opacity: 0.25; }
+  100% { transform: scale(13); opacity: 0; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .decor * {
+    animation: none !important;
+  }
+}
+
+/* On narrow screens the header owns the top of the chapter — keep decor clear of it. */
+@media (max-width: 760px) {
+  .decor-paris__flag {
+    top: auto;
+    bottom: 3rem;
+    right: 1.5rem;
+    width: 76px;
+    height: 50px;
+    opacity: 0.35;
+  }
+  .decor-paris__tower {
+    right: 1rem;
+    bottom: 10rem;
+    height: 130px;
+  }
+  .decor-paris__map {
+    left: -10rem;
+    top: 18rem;
+    opacity: 0.1;
+  }
+  .decor-places {
+    top: auto;
+    bottom: 2rem;
+    right: 1.5rem;
+  }
+  .decor-italien__volcano {
+    top: auto;
+    bottom: 6rem;
+    right: 1rem;
+    opacity: 0.14;
+  }
+  .decor-lemon {
+    opacity: 0.35;
+  }
+  .decor-lemon--0,
+  .decor-lemon--1 {
+    display: none;
+  }
+}

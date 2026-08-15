@@ -1,0 +1,88 @@
+/* Scroll-driven motion. Uses native scroll timelines where available and simply
+   does nothing where they are not — the reveal transitions still carry the page. */
+
+@media (prefers-reduced-motion: no-preference) {
+  @supports (animation-timeline: view()) {
+    .media-tile--hero .media-tile__inner {
+      animation: mediaRise linear both;
+      animation-timeline: view();
+      animation-range: entry 5% cover 45%;
+    }
+
+    .media-tile--main .media-tile__inner {
+      animation: mediaRiseSoft linear both;
+      animation-timeline: view();
+      animation-range: entry 10% cover 50%;
+    }
+
+    /* Ambient light swells slightly later than the photo itself. */
+    .media-tile__glow {
+      animation: glowDrift linear both;
+      animation-timeline: view();
+      animation-range: entry 0% exit 100%;
+    }
+
+    .chapter__header {
+      animation: headerRise linear both;
+      animation-timeline: view();
+      animation-range: entry 15% cover 40%;
+    }
+
+    .decor {
+      animation: decorDrift linear both;
+      animation-timeline: view();
+      animation-range: entry 0% exit 100%;
+    }
+  }
+}
+
+@keyframes mediaRise {
+  from {
+    transform: scale(0.93) translateY(38px);
+  }
+  to {
+    transform: scale(1) translateY(0);
+  }
+}
+
+@keyframes mediaRiseSoft {
+  from {
+    transform: scale(0.96) translateY(24px);
+  }
+  to {
+    transform: scale(1) translateY(0);
+  }
+}
+
+@keyframes glowDrift {
+  0% {
+    transform: scale(1) translateY(30px);
+  }
+  50% {
+    transform: scale(1.12) translateY(0);
+  }
+  100% {
+    transform: scale(1) translateY(-30px);
+  }
+}
+
+@keyframes headerRise {
+  from {
+    opacity: 0.25;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Decor drifts slower than the page — a light parallax layer. */
+@keyframes decorDrift {
+  from {
+    transform: translateY(-40px);
+  }
+  to {
+    transform: translateY(40px);
+  }
+}

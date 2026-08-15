@@ -1,0 +1,107 @@
+.main--hidden {
+  visibility: hidden;
+  height: 0;
+  overflow: hidden;
+}
+.main--visible {
+  visibility: visible;
+  height: auto;
+}
+
+/* ---------- Per-chapter flourishes ---------- */
+
+/* Schule: faint notebook rule lines behind header */
+.chapter[data-theme="schule"] .chapter__header {
+  position: relative;
+}
+.chapter[data-theme="schule"] .chapter__header::before {
+  content: "";
+  position: absolute;
+  left: -8px;
+  right: -8px;
+  top: 0;
+  bottom: -1.5rem;
+  z-index: -1;
+  background-image: repeating-linear-gradient(
+    to bottom,
+    transparent,
+    transparent 2.1rem,
+    rgba(224, 185, 84, 0.14) 2.1rem,
+    rgba(224, 185, 84, 0.14) calc(2.1rem + 1px)
+  );
+}
+
+/* Phasen: chip row under subtitle */
+.chapter[data-theme="phasen"] .chapter__subtitle {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+/* Sidequest: glitchy title */
+.chapter[data-theme="sidequest"] .chapter__title {
+  position: relative;
+}
+.chapter[data-theme="sidequest"] .chapter__title:hover {
+  animation: glitchShift 0.4s steps(2) infinite;
+}
+@keyframes glitchShift {
+  0% {
+    text-shadow: -2px 0 var(--chapter-accent), 2px 0 #5be3ff;
+  }
+  50% {
+    text-shadow: 2px 0 var(--chapter-accent), -2px 0 #5be3ff;
+  }
+  100% {
+    text-shadow: -1px 0 var(--chapter-accent), 1px 0 #5be3ff;
+  }
+}
+
+/* Paris: refined tracking */
+.chapter[data-theme="paris"] .chapter__title {
+  letter-spacing: -0.005em;
+}
+.chapter[data-theme="paris"] .kicker {
+  letter-spacing: 0.34em;
+}
+
+/* Italien: shimmering warm/teal title gradient */
+.chapter[data-theme="italien"] .chapter__title {
+  background: linear-gradient(120deg, var(--chapter-fg) 30%, var(--chapter-accent) 50%, var(--chapter-fg) 70%);
+  background-size: 220% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: shimmerTitle 7s ease-in-out infinite;
+}
+@keyframes shimmerTitle {
+  0%,
+  100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+/* Winter: frosty title glow */
+.chapter[data-theme="winter"] .chapter__title {
+  text-shadow: 0 0 26px rgba(159, 216, 255, 0.28);
+}
+
+/* Silvester: warm spark glow on kicker */
+.chapter[data-theme="silvester"] .kicker {
+  text-shadow: 0 0 10px rgba(242, 193, 78, 0.6);
+}
+
+/* Anfang: soft sepia edge vignette on media */
+.chapter[data-theme="anfang"] .media-tile__inner img {
+  filter: sepia(0.12) contrast(1.02);
+}
+
+@media (max-width: 720px) {
+  .progress-rail {
+    display: none;
+  }
+}

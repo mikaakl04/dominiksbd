@@ -1,0 +1,247 @@
+.particles-canvas {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* ---------- Media Tile ---------- */
+/* Container always matches the media's own aspect ratio,
+   so nothing is ever cropped and nothing is letterboxed. */
+
+.media-tile {
+  margin: 0;
+  position: relative;
+  opacity: 0;
+  transform: translateY(26px) scale(0.985);
+  transition: opacity 1s cubic-bezier(0.16, 1, 0.3, 1), transform 1s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.media-tile.is-visible {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+/* Ambient light bled from the photo itself, filling the space around portrait
+   media without ever cropping the image. */
+.media-tile__glow {
+  position: absolute;
+  inset: -12% -18%;
+  z-index: -1;
+  background-size: cover;
+  background-position: center;
+  filter: blur(70px) saturate(1.5);
+  opacity: 0;
+  transform: scale(1.05);
+  transition: opacity 1.6s ease 0.2s;
+  pointer-events: none;
+}
+
+.media-tile.is-loaded .media-tile__glow {
+  opacity: 0.4;
+}
+
+.media-tile__inner {
+  position: relative;
+  overflow: hidden;
+  border-radius: 6px;
+  background: rgba(0, 0, 0, 0.45);
+  box-shadow: 0 30px 70px -28px rgba(0, 0, 0, 0.85);
+}
+
+/* <picture> defaults to display:inline, which breaks the sizing chain and lets
+   the loaded image resize the container. Let the img be the layout box. */
+.media-tile__inner picture {
+  display: contents;
+}
+
+.media-tile__inner img,
+.media-tile__inner video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  opacity: 0;
+  transition: opacity 0.8s ease;
+}
+
+.media-tile.is-loaded .media-tile__inner img,
+.media-tile.is-loaded .media-tile__inner video {
+  opacity: 1;
+}
+
+.media-tile__videobadge {
+  position: absolute;
+  top: 12px;
+  left: 14px;
+  z-index: 2;
+  font-family: var(--font-mono);
+  font-size: 0.6rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(4px);
+  padding: 0.25rem 0.55rem;
+  border-radius: 4px;
+  pointer-events: none;
+}
+
+.media-tile figcaption {
+  margin-top: 0.7rem;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.03em;
+  color: var(--chapter-fg-dim);
+  max-width: 44ch;
+}
+
+[data-clickable="true"] {
+  cursor: zoom-in;
+}
+
+/* Width caps keep portrait media from towering over the page. */
+.media-tile--hero {
+  width: 100%;
+  margin-inline: auto;
+}
+.media-tile--hero.is-portrait {
+  max-width: 540px;
+}
+.media-tile--hero.is-landscape {
+  max-width: 1080px;
+}
+
+.media-tile--main.is-portrait {
+  max-width: 420px;
+  margin-inline: auto;
+}
+
+.media-tile--supporting {
+  flex: 0 0 auto;
+  width: clamp(180px, 24vw, 260px);
+}
+
+/* ---------- Chapter layout ---------- */
+
+.chapter {
+  position: relative;
+  isolation: isolate;
+  background: linear-gradient(180deg, var(--chapter-bg-1) 0%, var(--chapter-bg-2) 100%);
+  padding-block: clamp(4.5rem, 12vw, 9rem);
+  overflow: hidden;
+}
+
+.chapter__vignette {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+}
+.chapter__vignette--warm {
+  background: radial-gradient(ellipse at 50% 0%, rgba(255, 190, 120, 0.12), transparent 55%),
+    radial-gradient(ellipse at 50% 100%, rgba(0, 0, 0, 0.55), transparent 60%);
+}
+.chapter__vignette--cold {
+  background: radial-gradient(ellipse at 50% 0%, rgba(150, 200, 255, 0.1), transparent 55%),
+    radial-gradient(ellipse at 50% 100%, rgba(0, 0, 0, 0.55), transparent 60%);
+}
+
+.chapter__scanlines {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  pointer-events: none;
+  opacity: 0.3;
+  background: repeating-linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 0.035) 0px,
+    rgba(255, 255, 255, 0.035) 1px,
+    transparent 2px,
+    transparent 4px
+  );
+  mix-blend-mode: overlay;
+}
+
+.chapter__content {
+  position: relative;
+  z-index: 3;
+}
+
+.chapter__header {
+  margin-bottom: clamp(2.5rem, 6vw, 4rem);
+  max-width: 60ch;
+}
+
+.chapter__kicker-row {
+  display: flex;
+  align-items: baseline;
+  gap: 0.9rem;
+  flex-wrap: wrap;
+}
+
+.chapter__title {
+  font-family: var(--font-display);
+  font-size: clamp(2.3rem, 6.5vw, 4.4rem);
+  line-height: 1.03;
+  color: var(--chapter-fg);
+  margin-top: 0.5rem;
+  letter-spacing: -0.012em;
+}
+
+.chapter__subtitle {
+  margin-top: 0.9rem;
+  font-size: clamp(0.95rem, 1.5vw, 1.1rem);
+  color: var(--chapter-fg-dim);
+}
+
+.chapter__note {
+  margin-top: 1.5rem;
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: clamp(1.05rem, 2vw, 1.35rem);
+  color: var(--chapter-accent);
+}
+
+.chapter__stack {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(2.5rem, 6vw, 4.5rem);
+}
+
+.chapter__pair {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: clamp(1.2rem, 2.6vw, 2rem);
+  align-items: start;
+  justify-items: center;
+}
+
+.chapter__filmstrip {
+  display: flex;
+  gap: 1.2rem;
+  overflow-x: auto;
+  padding-bottom: 1rem;
+  scroll-snap-type: x proximity;
+  -webkit-overflow-scrolling: touch;
+}
+.chapter__filmstrip .media-tile {
+  scroll-snap-align: start;
+}
+.chapter__filmstrip::-webkit-scrollbar {
+  height: 5px;
+}
+.chapter__filmstrip::-webkit-scrollbar-thumb {
+  background: var(--chapter-accent);
+  border-radius: 4px;
+}
+
+@media (max-width: 760px) {
+  .media-tile--hero.is-portrait,
+  .media-tile--main.is-portrait {
+    max-width: 100%;
+  }
+}
