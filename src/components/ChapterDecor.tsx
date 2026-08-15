@@ -135,15 +135,5 @@ export default function ChapterDecor({ slug }: { slug: ThemeKey }) {
     );
   }
 
-  if (slug === "silvester") {
-    return (
-      <div className="decor decor--silvester" aria-hidden="true">
-        <div className="decor-firework decor-firework--1" />
-        <div className="decor-firework decor-firework--2" />
-        <div className="decor-firework decor-firework--3" />
-      </div>
-    );
-  }
-
   return null;
 }

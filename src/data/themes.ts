@@ -1,6 +1,6 @@
 import type { ThemeKey } from "./content";
 
-export type ParticleType = "dust" | "sparks" | "snow" | "bokeh" | "none";
+export type ParticleType = "dust" | "sparks" | "snow" | "bokeh" | "fireworks" | "none";
 
 export interface Theme {
   bg1: string;
@@ -24,7 +24,7 @@ export const themes: Record<ThemeKey, Theme> = {
     accent2: "#ff9d5c",
     fg: "#f7f1e3",
     fgDim: "#b0aec7",
-    particle: "sparks",
+    particle: "fireworks",
     particleColor: "247, 200, 110",
     vignette: "cold",
   },

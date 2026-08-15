@@ -406,7 +406,8 @@
           "file": "IMG_0379.jpeg",
           "type": "image",
           "role": "supporting",
-          "sourceDir": "Zusammen in Paris, italien anfrueern , stadt erkunden versaille, eifffelturm usw. eigetnlich alles"
+          "sourceDir": "Zusammen in Paris, italien anfrueern , stadt erkunden versaille, eifffelturm usw. eigetnlich alles",
+          "hidden": true
         },
         {
           "id": "paris-10",
@@ -443,7 +444,8 @@
           "file": "IMG_0384.jpeg",
           "type": "image",
           "role": "supporting",
-          "sourceDir": "Zusammen in Paris, italien anfrueern , stadt erkunden versaille, eifffelturm usw. eigetnlich alles"
+          "sourceDir": "Zusammen in Paris, italien anfrueern , stadt erkunden versaille, eifffelturm usw. eigetnlich alles",
+          "hidden": true
         },
         {
           "id": "winter-10",

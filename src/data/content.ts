@@ -39,10 +39,9 @@ export const chapters: ChapterContent[] = [
     era: "Winter",
     kicker: "Kapitel II",
     title: "Die geilsten Winter",
-    subtitle: "Eis „laufen“. Tee mit Schuss. Snowboard fahren.",
+    subtitle: "Eis „laufen“. Tee mit Schuss. „Snowboard“ fahren.",
     captions: {
       "winter-04": "Tee mit Schuss.",
-      "winter-08": "Snowboard fahren — eigentlich ein Skateboard ohne Rollen.",
       "winter-15": "„Soll er oder nicht?“",
     },
   },
@@ -90,16 +89,13 @@ export const chapters: ChapterContent[] = [
       ["paris-02", "paris-03"],
       ["paris-04", "paris-05"],
       ["paris-06", "paris-08"],
-      ["paris-09"],
       ["paris-10", "paris-11"],
       ["paris-12", "paris-13"],
-      ["paris-14"],
     ],
     captions: {
       "paris-02": "Panthéon.",
       "paris-06": "Eiffelturm.",
       "paris-10": "Versailles.",
-      "paris-14": "Pizza. Immer.",
     },
   },
   {
@@ -119,10 +115,9 @@ export const chapters: ChapterContent[] = [
     era: "Schule & Abitur",
     kicker: "Kapitel VII",
     title: "Schule und unser Abitur",
-    note: "Nicht ohne Grund: zweiter Platz. Mehr nicht.",
     captions: {
       "schule-03": "Mottowoche.",
-      "schule-01": "Best Bromance. Offiziell.",
+      "schule-01": "Nicht ohne Grund: zweiter Platz.",
     },
   },
 ];
@@ -132,7 +127,7 @@ export const finaleContent = {
   promise: "Hier ist noch ganz schön viel Platz.",
   loading: "NEXT MEMORY LOADING…",
   name: "Dominik",
-  personal: "Du bist ein toller Mensch und ein noch besserer Freund. Ich liebe dich.",
+  personal: "Du bist ein toller Mensch und ein noch besserer Freund. Ich lieb dich, Bro.",
   outro: "Auf den nächsten Urlaub — und alles, was da noch dazukommt.",
   rewind: "Nochmal zurückspulen",
 };
