@@ -115,9 +115,17 @@
   max-width: 1080px;
 }
 
+/* The media is absolutely positioned inside its ratio box, so the tile itself
+   must claim the column width — otherwise it collapses to nothing. */
+.media-tile--main {
+  width: 100%;
+  margin-inline: auto;
+}
 .media-tile--main.is-portrait {
   max-width: 420px;
-  margin-inline: auto;
+}
+.media-tile--main.is-landscape {
+  max-width: 760px;
 }
 
 .media-tile--supporting {

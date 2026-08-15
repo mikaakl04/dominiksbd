@@ -1,12 +1,10 @@
 import { finaleContent } from "../data/content";
-import { assetsByRole, withBase } from "../lib/assets";
+import { assetById, withBase } from "../lib/assets";
 import { useReveal } from "../hooks/useReveal";
 
 function FinaleImage({ id }: { id: string }) {
   const { ref, visible } = useReveal<HTMLDivElement>();
-  const asset = [...assetsByRole("italien", "hero"), ...assetsByRole("paris", "hero"), ...assetsByRole("sommer", "hero")].find(
-    (a) => a.id === id,
-  );
+  const asset = assetById(id);
   if (!asset) return null;
   return (
     <div ref={ref} className={`finale__image ${visible ? "is-visible" : ""}`}>
@@ -52,6 +50,7 @@ export default function Finale({ onRewind }: Props) {
           <span className="kicker">Happy Birthday</span>
           <h2 className="finale__name">{finaleContent.name}</h2>
           <p className="finale__personal">{finaleContent.personal}</p>
+          <p className="finale__outro">{finaleContent.outro}</p>
         </div>
 
         <button className="finale__rewind" onClick={onRewind}>

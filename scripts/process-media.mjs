@@ -33,8 +33,10 @@ function probeDims(file) {
 const outAssets = [];
 
 for (const chapter of manifest.chapters) {
-  const srcDir = path.join(SRC_ROOT, chapter.sourceDir);
   for (const asset of chapter.assets) {
+    // A chapter can gather media from several original folders, so the folder
+    // is tracked per asset and only falls back to the chapter's own.
+    const srcDir = path.join(SRC_ROOT, asset.sourceDir ?? chapter.sourceDir);
     const srcFile = path.join(srcDir, asset.file);
     if (!existsSync(srcFile)) {
       console.error("MISSING SOURCE:", srcFile);
@@ -49,7 +51,7 @@ for (const chapter of manifest.chapters) {
       role: asset.role,
       note: asset.note ?? null,
       originalFilename: asset.file,
-      originalFolder: chapter.sourceDir,
+      originalFolder: asset.sourceDir ?? chapter.sourceDir,
     };
 
     if (asset.type === "image") {

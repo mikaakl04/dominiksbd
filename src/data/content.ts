@@ -1,13 +1,11 @@
 export type ThemeKey =
   | "silvester"
-  | "anfang"
-  | "schule"
-  | "phasen"
   | "winter"
   | "sommer"
   | "sidequest"
   | "paris"
-  | "italien";
+  | "italien"
+  | "schule";
 
 export interface ChapterContent {
   slug: ThemeKey;
@@ -17,6 +15,9 @@ export interface ChapterContent {
   title: string;
   subtitle?: string;
   note?: string;
+  /** Explicit rows of asset ids. A row with two ids renders side by side.
+   *  Omit to let the chapter lay itself out from the asset roles. */
+  layout?: string[][];
   captions: Record<string, string>;
 }
 
@@ -28,47 +29,16 @@ export const chapters: ChapterContent[] = [
     kicker: "Kapitel I",
     title: "Der Anfang",
     subtitle: "Wir drei. Mit Calle.",
-    note: "„Frohes neues, Mika Diggah.“ — seitdem Insider.",
     captions: {
       "silvester-01": "Das erste Bild zusammen.",
-      "silvester-02": "Das Video. Der Insider.",
+      "silvester-02": "„Frohes neues, Mika Diggah.“",
     },
-  },
-  {
-    slug: "anfang",
-    order: 2,
-    era: "Die Zeit danach",
-    kicker: "Kapitel II",
-    title: "Aus der Zeit",
-    captions: {},
-  },
-  {
-    slug: "schule",
-    order: 3,
-    era: "Schule & Abitur",
-    kicker: "Kapitel III",
-    title: "Schule und unser Abitur",
-    note: "Nicht ohne Grund sind wir Best Moments geworden.",
-    captions: {
-      "schule-01": "Bromance — offizielles Ranking.",
-      "schule-03": "Mottowoche.",
-      "schule-04": "Die Brownies.",
-    },
-  },
-  {
-    slug: "phasen",
-    order: 4,
-    era: "Zwischendurch",
-    kicker: "Kapitel IV",
-    title: "Viele Phasen",
-    subtitle: "Paulina. Emilio. Deven. Calle: keine Phase.",
-    captions: {},
   },
   {
     slug: "winter",
-    order: 5,
+    order: 2,
     era: "Winter",
-    kicker: "Kapitel V",
+    kicker: "Kapitel II",
     title: "Die geilsten Winter",
     subtitle: "Eis „laufen“. Tee mit Schuss. Snowboard ohne Rollen.",
     captions: {
@@ -78,45 +48,81 @@ export const chapters: ChapterContent[] = [
   },
   {
     slug: "sommer",
-    order: 6,
+    order: 3,
     era: "Sommer",
-    kicker: "Kapitel VI",
+    kicker: "Kapitel III",
     title: "Die schönsten Sommer",
     subtitle: "Unser Platz auf den Feldern. Unser See.",
     captions: {
-      "sommer-08": "Baden am See.",
-      "sommer-10": "Grillen an unserem Platz.",
+      "sommer-08": "Unser See.",
+      "sommer-10": "Grillen. Unser Platz.",
     },
   },
   {
     slug: "sidequest",
-    order: 7,
+    order: 4,
     era: "Random",
-    kicker: "Kapitel VII",
-    title: "Random Sidequest",
-    subtitle: "Roller-Touren. Felix' Motorrad. Graffiti. Vodka Orange.",
+    kicker: "Kapitel IV",
+    title: "Random Sidequests",
+    subtitle: "Roller. Graffiti. Vodka Orange. Und was sonst noch so ging.",
     captions: {
+      "sidequest-02": "Vodka Orange. Irgendwo. Nachts.",
+      "sidequest-06": "Graffiti. Wie und warum auch immer wir das gemacht haben.",
+      "phasen-04": "Boxen. Auch mal eine Phase.",
+      "sidequest-04": "Felix und sein Roller. Der Inbegriff von random.",
+      "sidequest-05": "Die geilste Nachttour.",
+      "schule-04": "Die Brownies. Haben uns — vor allem mir — die Augen geöffnet.",
       "sidequest-03": "Amsterdam. Leider zu viel Anton.",
+      "sidequest-07": "Déjà-vu.",
     },
   },
   {
     slug: "paris",
-    order: 8,
+    order: 5,
     era: "Paris",
-    kicker: "Kapitel VIII",
+    kicker: "Kapitel V",
     title: "Zusammen in Paris",
     subtitle: "Eiffelturm. Panthéon. Versailles.",
-    captions: {},
+    // Same spot, one of each of us — those belong next to each other.
+    layout: [
+      ["paris-01"],
+      ["paris-02", "paris-03"],
+      ["paris-04", "paris-05"],
+      ["paris-06", "paris-07"],
+      ["paris-08"],
+      ["paris-09"],
+      ["paris-10", "paris-11"],
+      ["paris-12", "paris-13"],
+      ["paris-14"],
+    ],
+    captions: {
+      "paris-02": "Panthéon.",
+      "paris-06": "Eiffelturm.",
+      "paris-10": "Versailles.",
+      "paris-14": "Pizza. Immer.",
+    },
   },
   {
     slug: "italien",
-    order: 9,
+    order: 6,
     era: "Italien",
-    kicker: "Kapitel IX",
+    kicker: "Kapitel VI",
     title: "Sorrento. Taormina. Stromboli.",
     subtitle: "Viel Wein. Noch mehr Momente.",
     captions: {
-      "italien-05": "Unser Jacuzzi in Sorrento.",
+      "italien-05": "Unser Jacuzzi. Sorrento.",
+    },
+  },
+  {
+    slug: "schule",
+    order: 7,
+    era: "Schule & Abitur",
+    kicker: "Kapitel VII",
+    title: "Schule und unser Abitur",
+    note: "Nicht ohne Grund sind wir Best Moments geworden.",
+    captions: {
+      "schule-03": "Mottowoche.",
+      "schule-01": "Best Bromance. Offiziell.",
     },
   },
 ];
@@ -126,7 +132,8 @@ export const finaleContent = {
   promise: "Hier ist noch ganz schön viel Platz.",
   loading: "NEXT MEMORY LOADING…",
   name: "Dominik",
-  personal: "Auf den nächsten Urlaub — und alles, was da noch dazukommt.",
+  personal: "Du bist ein toller Mensch und ein noch besserer Freund. Ich liebe dich.",
+  outro: "Auf den nächsten Urlaub — und alles, was da noch dazukommt.",
   rewind: "Nochmal zurückspulen",
 };
 

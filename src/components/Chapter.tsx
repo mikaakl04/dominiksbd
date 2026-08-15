@@ -24,26 +24,34 @@ export default function Chapter({ content, onOpenLightbox }: Props) {
   };
 
   // Hero + videos get full width; remaining images pair up two-by-two.
+  // A chapter can override this with an explicit layout when specific shots
+  // belong side by side (same spot, one of each of us).
   const blocks: Array<{ kind: "full"; ids: string[] } | { kind: "pair"; ids: string[] }> = [];
-  let pairBuffer: string[] = [];
 
-  for (const a of assets) {
-    const wantsFull = a.role === "hero" || a.type === "video";
-    if (wantsFull) {
-      if (pairBuffer.length) {
-        blocks.push({ kind: "pair", ids: pairBuffer });
-        pairBuffer = [];
-      }
-      blocks.push({ kind: "full", ids: [a.id] });
-    } else {
-      pairBuffer.push(a.id);
-      if (pairBuffer.length === 2) {
-        blocks.push({ kind: "pair", ids: pairBuffer });
-        pairBuffer = [];
+  if (content.layout) {
+    for (const row of content.layout) {
+      blocks.push(row.length === 1 ? { kind: "full", ids: row } : { kind: "pair", ids: row });
+    }
+  } else {
+    let pairBuffer: string[] = [];
+    for (const a of assets) {
+      const wantsFull = a.role === "hero" || a.type === "video";
+      if (wantsFull) {
+        if (pairBuffer.length) {
+          blocks.push({ kind: "pair", ids: pairBuffer });
+          pairBuffer = [];
+        }
+        blocks.push({ kind: "full", ids: [a.id] });
+      } else {
+        pairBuffer.push(a.id);
+        if (pairBuffer.length === 2) {
+          blocks.push({ kind: "pair", ids: pairBuffer });
+          pairBuffer = [];
+        }
       }
     }
+    if (pairBuffer.length) blocks.push({ kind: "pair", ids: pairBuffer });
   }
-  if (pairBuffer.length) blocks.push({ kind: "pair", ids: pairBuffer });
 
   const byId = new Map(assets.map((a) => [a.id, a]));
 

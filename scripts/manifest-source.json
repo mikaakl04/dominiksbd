@@ -1,421 +1,439 @@
 {
   "chapters": [
     {
-      "slug": "anfang",
-      "order": 1,
-      "sourceDir": "Der Anfang",
-      "assets": [
-        {
-          "id": "anfang-01",
-          "file": "IMG_0330.jpeg",
-          "type": "image",
-          "role": "hero"
-        },
-        {
-          "id": "anfang-02",
-          "file": "IMG_0331.jpeg",
-          "type": "image",
-          "role": "main"
-        }
-      ]
-    },
-    {
       "slug": "silvester",
-      "order": 2,
+      "order": 1,
       "sourceDir": "Der Start Silvester 2019:20 , \"Zitat(insider)\" Frohes neues Mika Diggah wichtig",
       "assets": [
         {
           "id": "silvester-01",
           "file": "erstes bild zusammen (mit calle auch noch und wir beide also wir drei.jpeg",
           "type": "image",
-          "role": "hero"
+          "role": "hero",
+          "sourceDir": "Der Start Silvester 2019:20 , \"Zitat(insider)\" Frohes neues Mika Diggah wichtig"
         },
         {
           "id": "silvester-02",
           "file": "das video ist sehr wichtig ist unser insider schon immer und erstes mal kenenn gelernt .mp4",
           "type": "video",
-          "role": "hero"
-        }
-      ]
-    },
-    {
-      "slug": "schule",
-      "order": 3,
-      "sourceDir": "Schule und unser Abitur",
-      "assets": [
-        {
-          "id": "schule-01",
-          "file": "IMG_0285.heic",
-          "type": "image",
-          "role": "hero"
+          "role": "hero",
+          "sourceDir": "Der Start Silvester 2019:20 , \"Zitat(insider)\" Frohes neues Mika Diggah wichtig"
         },
         {
-          "id": "schule-02",
-          "file": "IMG_0332.jpeg",
+          "id": "anfang-01",
+          "file": "IMG_0330.jpeg",
           "type": "image",
-          "role": "main"
+          "role": "hero",
+          "sourceDir": "Der Anfang"
         },
         {
-          "id": "schule-03",
-          "file": "IMG_0387.jpeg",
+          "id": "anfang-02",
+          "file": "IMG_0331.jpeg",
           "type": "image",
-          "role": "hero"
-        },
-        {
-          "id": "schule-04",
-          "file": "diese brownies haben uns (vor alle mir) die augen geööfnet und das leben gerettet.mp4",
-          "type": "video",
-          "role": "main"
-        }
-      ]
-    },
-    {
-      "slug": "phasen",
-      "order": 4,
-      "sourceDir": "Viele Phasen (Paulina Phase, Emilio Phase , Deven usw --> Calle keine Phase!!!)",
-      "assets": [
-        {
-          "id": "phasen-01",
-          "file": "IMG_0333.jpeg",
-          "type": "image",
-          "role": "main"
-        },
-        {
-          "id": "phasen-02",
-          "file": "IMG_0334.jpeg",
-          "type": "image",
-          "role": "main"
-        },
-        {
-          "id": "phasen-03",
-          "file": "IMG_0335.jpeg",
-          "type": "image",
-          "role": "supporting"
-        },
-        {
-          "id": "phasen-04",
-          "file": "IMG_0341.jpeg",
-          "type": "image",
-          "role": "hero"
-        },
-        {
-          "id": "phasen-05",
-          "file": "IMG_0342.jpeg",
-          "type": "image",
-          "role": "supporting"
-        },
-        {
-          "id": "phasen-06",
-          "file": "IMG_0343.jpeg",
-          "type": "image",
-          "role": "supporting"
-        },
-        {
-          "id": "phasen-07",
-          "file": "IMG_0347.jpeg",
-          "type": "image",
-          "role": "main"
-        },
-        {
-          "id": "phasen-08",
-          "file": "IMG_0353.jpeg",
-          "type": "image",
-          "role": "supporting"
+          "role": "main",
+          "sourceDir": "Der Anfang"
         }
       ]
     },
     {
       "slug": "winter",
-      "order": 5,
+      "order": 2,
       "sourceDir": "Die geilsten Winter (kalt, eis\"laufen\" eher rutschen lachen, snowboard (auf altem skateboard ohne rollen, trinken und chillen während corona virus",
       "assets": [
-        {
-          "id": "winter-01",
-          "file": "IMG_0339.jpeg",
-          "type": "image",
-          "role": "supporting"
-        },
-        {
-          "id": "winter-02",
-          "file": "IMG_0340.jpeg",
-          "type": "image",
-          "role": "supporting"
-        },
         {
           "id": "winter-03",
           "file": "IMG_0344.jpeg",
           "type": "image",
-          "role": "hero"
+          "role": "hero",
+          "sourceDir": "Die geilsten Winter (kalt, eis\"laufen\" eher rutschen lachen, snowboard (auf altem skateboard ohne rollen, trinken und chillen während corona virus"
         },
         {
           "id": "winter-04",
           "file": "IMG_0345.jpeg",
           "type": "image",
-          "role": "hero"
+          "role": "hero",
+          "sourceDir": "Die geilsten Winter (kalt, eis\"laufen\" eher rutschen lachen, snowboard (auf altem skateboard ohne rollen, trinken und chillen während corona virus"
+        },
+        {
+          "id": "winter-01",
+          "file": "IMG_0339.jpeg",
+          "type": "image",
+          "role": "supporting",
+          "sourceDir": "Die geilsten Winter (kalt, eis\"laufen\" eher rutschen lachen, snowboard (auf altem skateboard ohne rollen, trinken und chillen während corona virus"
+        },
+        {
+          "id": "winter-02",
+          "file": "IMG_0340.jpeg",
+          "type": "image",
+          "role": "supporting",
+          "sourceDir": "Die geilsten Winter (kalt, eis\"laufen\" eher rutschen lachen, snowboard (auf altem skateboard ohne rollen, trinken und chillen während corona virus"
+        },
+        {
+          "id": "winter-13",
+          "file": "auch der tee mit schuss ist legende und  moorkaten war auch immer geil .mp4",
+          "type": "video",
+          "role": "hero",
+          "sourceDir": "Die geilsten Winter (kalt, eis\"laufen\" eher rutschen lachen, snowboard (auf altem skateboard ohne rollen, trinken und chillen während corona virus"
         },
         {
           "id": "winter-05",
           "file": "IMG_0346.jpeg",
           "type": "image",
-          "role": "main"
+          "role": "main",
+          "sourceDir": "Die geilsten Winter (kalt, eis\"laufen\" eher rutschen lachen, snowboard (auf altem skateboard ohne rollen, trinken und chillen während corona virus"
         },
         {
           "id": "winter-06",
           "file": "IMG_0348.jpeg",
           "type": "image",
-          "role": "main"
+          "role": "main",
+          "sourceDir": "Die geilsten Winter (kalt, eis\"laufen\" eher rutschen lachen, snowboard (auf altem skateboard ohne rollen, trinken und chillen während corona virus"
+        },
+        {
+          "id": "winter-14",
+          "file": "136C885C-42FD-4075-9100-926EA8C07E8A.mp4",
+          "type": "video",
+          "role": "hero",
+          "sourceDir": "Die geilsten Winter (kalt, eis\"laufen\" eher rutschen lachen, snowboard (auf altem skateboard ohne rollen, trinken und chillen während corona virus"
         },
         {
           "id": "winter-07",
           "file": "IMG_0354.jpeg",
           "type": "image",
-          "role": "supporting"
+          "role": "supporting",
+          "sourceDir": "Die geilsten Winter (kalt, eis\"laufen\" eher rutschen lachen, snowboard (auf altem skateboard ohne rollen, trinken und chillen während corona virus"
         },
         {
           "id": "winter-08",
           "file": "IMG_0355.jpeg",
           "type": "image",
-          "role": "supporting"
+          "role": "supporting",
+          "sourceDir": "Die geilsten Winter (kalt, eis\"laufen\" eher rutschen lachen, snowboard (auf altem skateboard ohne rollen, trinken und chillen während corona virus"
+        },
+        {
+          "id": "winter-15",
+          "file": "45F78D22-138F-4FD2-B30D-FF1479FA700F.mp4",
+          "type": "video",
+          "role": "hero",
+          "sourceDir": "Die geilsten Winter (kalt, eis\"laufen\" eher rutschen lachen, snowboard (auf altem skateboard ohne rollen, trinken und chillen während corona virus"
         },
         {
           "id": "winter-09",
           "file": "IMG_0356.jpeg",
           "type": "image",
-          "role": "supporting"
+          "role": "supporting",
+          "sourceDir": "Die geilsten Winter (kalt, eis\"laufen\" eher rutschen lachen, snowboard (auf altem skateboard ohne rollen, trinken und chillen während corona virus"
+        },
+        {
+          "id": "winter-11",
+          "file": "IMG_0386.jpeg",
+          "type": "image",
+          "role": "main",
+          "sourceDir": "Die geilsten Winter (kalt, eis\"laufen\" eher rutschen lachen, snowboard (auf altem skateboard ohne rollen, trinken und chillen während corona virus"
+        },
+        {
+          "id": "winter-12",
+          "file": "68901E2A-E207-477F-8646-DBD02F64889C.mp4",
+          "type": "video",
+          "role": "supporting",
+          "sourceDir": "Die geilsten Winter (kalt, eis\"laufen\" eher rutschen lachen, snowboard (auf altem skateboard ohne rollen, trinken und chillen während corona virus"
         },
         {
           "id": "winter-10",
           "file": "IMG_0371.jpeg",
           "type": "image",
           "role": "archive",
+          "sourceDir": "Die geilsten Winter (kalt, eis\"laufen\" eher rutschen lachen, snowboard (auf altem skateboard ohne rollen, trinken und chillen während corona virus",
           "note": "aside"
-        },
-        {
-          "id": "winter-11",
-          "file": "IMG_0386.jpeg",
-          "type": "image",
-          "role": "main"
-        },
-        {
-          "id": "winter-12",
-          "file": "68901E2A-E207-477F-8646-DBD02F64889C.mp4",
-          "type": "video",
-          "role": "supporting"
-        },
-        {
-          "id": "winter-13",
-          "file": "auch der tee mit schuss ist legende und  moorkaten war auch immer geil .mp4",
-          "type": "video",
-          "role": "hero"
-        },
-        {
-          "id": "winter-14",
-          "file": "136C885C-42FD-4075-9100-926EA8C07E8A.mp4",
-          "type": "video",
-          "role": "hero"
-        },
-        {
-          "id": "winter-15",
-          "file": "45F78D22-138F-4FD2-B30D-FF1479FA700F.mp4",
-          "type": "video",
-          "role": "hero"
         }
       ]
     },
     {
       "slug": "sommer",
-      "order": 6,
+      "order": 3,
       "sourceDir": "Die schönsten sommer, roller später mottorad, unser platz auf den feldern, american football, billo grillen usw. und dann auch usner see, baden chillen steine werfen usw.  ",
       "assets": [
+        {
+          "id": "sommer-06",
+          "file": "IMG_0368.jpeg",
+          "type": "image",
+          "role": "hero",
+          "sourceDir": "Die schönsten sommer, roller später mottorad, unser platz auf den feldern, american football, billo grillen usw. und dann auch usner see, baden chillen steine werfen usw.  "
+        },
         {
           "id": "sommer-01",
           "file": "IMG_0359.jpeg",
           "type": "image",
-          "role": "supporting"
+          "role": "supporting",
+          "sourceDir": "Die schönsten sommer, roller später mottorad, unser platz auf den feldern, american football, billo grillen usw. und dann auch usner see, baden chillen steine werfen usw.  "
         },
         {
           "id": "sommer-02",
           "file": "IMG_0360.jpeg",
           "type": "image",
-          "role": "main"
+          "role": "main",
+          "sourceDir": "Die schönsten sommer, roller später mottorad, unser platz auf den feldern, american football, billo grillen usw. und dann auch usner see, baden chillen steine werfen usw.  "
+        },
+        {
+          "id": "sommer-08",
+          "file": "baden am see.mp4",
+          "type": "video",
+          "role": "hero",
+          "sourceDir": "Die schönsten sommer, roller später mottorad, unser platz auf den feldern, american football, billo grillen usw. und dann auch usner see, baden chillen steine werfen usw.  "
         },
         {
           "id": "sommer-03",
           "file": "IMG_0363.jpeg",
           "type": "image",
           "role": "main",
+          "sourceDir": "Die schönsten sommer, roller später mottorad, unser platz auf den feldern, american football, billo grillen usw. und dann auch usner see, baden chillen steine werfen usw.  ",
           "rotate": -90
         },
         {
           "id": "sommer-04",
           "file": "IMG_0365.jpeg",
           "type": "image",
-          "role": "main"
+          "role": "main",
+          "sourceDir": "Die schönsten sommer, roller später mottorad, unser platz auf den feldern, american football, billo grillen usw. und dann auch usner see, baden chillen steine werfen usw.  "
+        },
+        {
+          "id": "sommer-10",
+          "file": "grillen an unserem platz.mp4",
+          "type": "video",
+          "role": "main",
+          "sourceDir": "Die schönsten sommer, roller später mottorad, unser platz auf den feldern, american football, billo grillen usw. und dann auch usner see, baden chillen steine werfen usw.  "
         },
         {
           "id": "sommer-05",
           "file": "IMG_0366.jpeg",
           "type": "image",
           "role": "hero",
+          "sourceDir": "Die schönsten sommer, roller später mottorad, unser platz auf den feldern, american football, billo grillen usw. und dann auch usner see, baden chillen steine werfen usw.  ",
           "rotate": 90
-        },
-        {
-          "id": "sommer-06",
-          "file": "IMG_0368.jpeg",
-          "type": "image",
-          "role": "hero"
-        },
-        {
-          "id": "sommer-07",
-          "file": "IMG_0388.jpeg",
-          "type": "image",
-          "role": "archive"
-        },
-        {
-          "id": "sommer-08",
-          "file": "baden am see.mp4",
-          "type": "video",
-          "role": "hero"
         },
         {
           "id": "sommer-09",
           "file": "DBE1D5F8-E9CB-481D-BE5B-A14827B9F6E4.mp4",
           "type": "video",
-          "role": "main"
+          "role": "main",
+          "sourceDir": "Die schönsten sommer, roller später mottorad, unser platz auf den feldern, american football, billo grillen usw. und dann auch usner see, baden chillen steine werfen usw.  "
         },
         {
-          "id": "sommer-10",
-          "file": "grillen an unserem platz.mp4",
-          "type": "video",
-          "role": "main"
+          "id": "sommer-07",
+          "file": "IMG_0388.jpeg",
+          "type": "image",
+          "role": "archive",
+          "sourceDir": "Die schönsten sommer, roller später mottorad, unser platz auf den feldern, american football, billo grillen usw. und dann auch usner see, baden chillen steine werfen usw.  "
         }
       ]
     },
     {
       "slug": "sidequest",
-      "order": 7,
+      "order": 4,
       "sourceDir": "random sidequest, von roller touren , bis felix helfen mit seinem festteckendem rollern, bis graffiti sprayen und unserer gielen nachttour + vodka orange ",
       "assets": [
-        {
-          "id": "sidequest-01",
-          "file": "IMG_0337.jpeg",
-          "type": "image",
-          "role": "archive"
-        },
         {
           "id": "sidequest-02",
           "file": "IMG_0357.jpeg",
           "type": "image",
-          "role": "hero"
-        },
-        {
-          "id": "sidequest-03",
-          "file": "amsterdamm, aber leider zu viel anton .mp4",
-          "type": "video",
-          "role": "hero"
-        },
-        {
-          "id": "sidequest-04",
-          "file": "DAD382FE-1374-4916-B611-2923D92FB3E9.mp4",
-          "type": "video",
-          "role": "main"
-        },
-        {
-          "id": "sidequest-05",
-          "file": "83613EB5-7D31-43E8-A6E7-BEC650E41BA5.mp4",
-          "type": "video",
-          "role": "main"
+          "role": "hero",
+          "sourceDir": "random sidequest, von roller touren , bis felix helfen mit seinem festteckendem rollern, bis graffiti sprayen und unserer gielen nachttour + vodka orange "
         },
         {
           "id": "sidequest-06",
           "file": "E111F419-FCF7-408B-AB0A-56BE1FC2739C.mov",
           "type": "video",
-          "role": "hero"
+          "role": "hero",
+          "sourceDir": "random sidequest, von roller touren , bis felix helfen mit seinem festteckendem rollern, bis graffiti sprayen und unserer gielen nachttour + vodka orange "
+        },
+        {
+          "id": "phasen-04",
+          "file": "IMG_0341.jpeg",
+          "type": "image",
+          "role": "hero",
+          "sourceDir": "Viele Phasen (Paulina Phase, Emilio Phase , Deven usw --> Calle keine Phase!!!)"
+        },
+        {
+          "id": "phasen-05",
+          "file": "IMG_0342.jpeg",
+          "type": "image",
+          "role": "supporting",
+          "sourceDir": "Viele Phasen (Paulina Phase, Emilio Phase , Deven usw --> Calle keine Phase!!!)"
+        },
+        {
+          "id": "sidequest-04",
+          "file": "DAD382FE-1374-4916-B611-2923D92FB3E9.mp4",
+          "type": "video",
+          "role": "main",
+          "sourceDir": "random sidequest, von roller touren , bis felix helfen mit seinem festteckendem rollern, bis graffiti sprayen und unserer gielen nachttour + vodka orange "
+        },
+        {
+          "id": "sidequest-05",
+          "file": "83613EB5-7D31-43E8-A6E7-BEC650E41BA5.mp4",
+          "type": "video",
+          "role": "main",
+          "sourceDir": "random sidequest, von roller touren , bis felix helfen mit seinem festteckendem rollern, bis graffiti sprayen und unserer gielen nachttour + vodka orange "
+        },
+        {
+          "id": "phasen-01",
+          "file": "IMG_0333.jpeg",
+          "type": "image",
+          "role": "main",
+          "sourceDir": "Viele Phasen (Paulina Phase, Emilio Phase , Deven usw --> Calle keine Phase!!!)"
+        },
+        {
+          "id": "phasen-02",
+          "file": "IMG_0334.jpeg",
+          "type": "image",
+          "role": "main",
+          "sourceDir": "Viele Phasen (Paulina Phase, Emilio Phase , Deven usw --> Calle keine Phase!!!)"
+        },
+        {
+          "id": "schule-04",
+          "file": "diese brownies haben uns (vor alle mir) die augen geööfnet und das leben gerettet.mp4",
+          "type": "video",
+          "role": "main",
+          "sourceDir": "Schule und unser Abitur"
+        },
+        {
+          "id": "phasen-03",
+          "file": "IMG_0335.jpeg",
+          "type": "image",
+          "role": "supporting",
+          "sourceDir": "Viele Phasen (Paulina Phase, Emilio Phase , Deven usw --> Calle keine Phase!!!)"
+        },
+        {
+          "id": "phasen-06",
+          "file": "IMG_0343.jpeg",
+          "type": "image",
+          "role": "supporting",
+          "sourceDir": "Viele Phasen (Paulina Phase, Emilio Phase , Deven usw --> Calle keine Phase!!!)"
+        },
+        {
+          "id": "sidequest-03",
+          "file": "amsterdamm, aber leider zu viel anton .mp4",
+          "type": "video",
+          "role": "hero",
+          "sourceDir": "random sidequest, von roller touren , bis felix helfen mit seinem festteckendem rollern, bis graffiti sprayen und unserer gielen nachttour + vodka orange "
+        },
+        {
+          "id": "phasen-07",
+          "file": "IMG_0347.jpeg",
+          "type": "image",
+          "role": "main",
+          "sourceDir": "Viele Phasen (Paulina Phase, Emilio Phase , Deven usw --> Calle keine Phase!!!)"
+        },
+        {
+          "id": "phasen-08",
+          "file": "IMG_0353.jpeg",
+          "type": "image",
+          "role": "supporting",
+          "sourceDir": "Viele Phasen (Paulina Phase, Emilio Phase , Deven usw --> Calle keine Phase!!!)"
         },
         {
           "id": "sidequest-07",
           "file": "92982D1D-3D14-453B-BDA0-22DB4F8259FB.mp4",
           "type": "video",
-          "role": "supporting"
+          "role": "supporting",
+          "sourceDir": "random sidequest, von roller touren , bis felix helfen mit seinem festteckendem rollern, bis graffiti sprayen und unserer gielen nachttour + vodka orange "
+        },
+        {
+          "id": "sidequest-01",
+          "file": "IMG_0337.jpeg",
+          "type": "image",
+          "role": "archive",
+          "sourceDir": "random sidequest, von roller touren , bis felix helfen mit seinem festteckendem rollern, bis graffiti sprayen und unserer gielen nachttour + vodka orange "
         }
       ]
     },
     {
       "slug": "paris",
-      "order": 8,
+      "order": 5,
       "sourceDir": "Zusammen in Paris, italien anfrueern , stadt erkunden versaille, eifffelturm usw. eigetnlich alles",
       "assets": [
         {
           "id": "paris-01",
           "file": "IMG_0370.jpeg",
           "type": "image",
-          "role": "hero"
+          "role": "hero",
+          "sourceDir": "Zusammen in Paris, italien anfrueern , stadt erkunden versaille, eifffelturm usw. eigetnlich alles"
         },
         {
           "id": "paris-02",
           "file": "IMG_0372.jpeg",
           "type": "image",
-          "role": "main"
+          "role": "main",
+          "sourceDir": "Zusammen in Paris, italien anfrueern , stadt erkunden versaille, eifffelturm usw. eigetnlich alles"
         },
         {
           "id": "paris-03",
           "file": "IMG_0373.jpeg",
           "type": "image",
-          "role": "main"
+          "role": "main",
+          "sourceDir": "Zusammen in Paris, italien anfrueern , stadt erkunden versaille, eifffelturm usw. eigetnlich alles"
         },
         {
           "id": "paris-04",
           "file": "IMG_0374.jpeg",
           "type": "image",
-          "role": "supporting"
+          "role": "supporting",
+          "sourceDir": "Zusammen in Paris, italien anfrueern , stadt erkunden versaille, eifffelturm usw. eigetnlich alles"
         },
         {
           "id": "paris-05",
           "file": "IMG_0375.jpeg",
           "type": "image",
-          "role": "supporting"
+          "role": "supporting",
+          "sourceDir": "Zusammen in Paris, italien anfrueern , stadt erkunden versaille, eifffelturm usw. eigetnlich alles"
         },
         {
           "id": "paris-06",
           "file": "IMG_0376.jpeg",
           "type": "image",
-          "role": "hero"
+          "role": "main",
+          "sourceDir": "Zusammen in Paris, italien anfrueern , stadt erkunden versaille, eifffelturm usw. eigetnlich alles"
         },
         {
           "id": "paris-07",
           "file": "IMG_0377.jpeg",
           "type": "image",
-          "role": "main"
+          "role": "main",
+          "sourceDir": "Zusammen in Paris, italien anfrueern , stadt erkunden versaille, eifffelturm usw. eigetnlich alles"
         },
         {
           "id": "paris-08",
           "file": "IMG_0378.jpeg",
           "type": "image",
-          "role": "main"
+          "role": "main",
+          "sourceDir": "Zusammen in Paris, italien anfrueern , stadt erkunden versaille, eifffelturm usw. eigetnlich alles"
         },
         {
           "id": "paris-09",
           "file": "IMG_0379.jpeg",
           "type": "image",
-          "role": "supporting"
+          "role": "supporting",
+          "sourceDir": "Zusammen in Paris, italien anfrueern , stadt erkunden versaille, eifffelturm usw. eigetnlich alles"
         },
         {
           "id": "paris-10",
           "file": "IMG_0380.jpeg",
           "type": "image",
-          "role": "hero"
+          "role": "main",
+          "sourceDir": "Zusammen in Paris, italien anfrueern , stadt erkunden versaille, eifffelturm usw. eigetnlich alles"
         },
         {
           "id": "paris-11",
           "file": "IMG_0381.jpeg",
           "type": "image",
-          "role": "main"
+          "role": "main",
+          "sourceDir": "Zusammen in Paris, italien anfrueern , stadt erkunden versaille, eifffelturm usw. eigetnlich alles"
         },
         {
           "id": "paris-12",
           "file": "IMG_0382.jpeg",
           "type": "image",
           "role": "supporting",
+          "sourceDir": "Zusammen in Paris, italien anfrueern , stadt erkunden versaille, eifffelturm usw. eigetnlich alles",
           "rotate": -90
         },
         {
@@ -423,19 +441,21 @@
           "file": "IMG_0383.jpeg",
           "type": "image",
           "role": "supporting",
+          "sourceDir": "Zusammen in Paris, italien anfrueern , stadt erkunden versaille, eifffelturm usw. eigetnlich alles",
           "rotate": -90
         },
         {
           "id": "paris-14",
           "file": "IMG_0384.jpeg",
           "type": "image",
-          "role": "supporting"
+          "role": "supporting",
+          "sourceDir": "Zusammen in Paris, italien anfrueern , stadt erkunden versaille, eifffelturm usw. eigetnlich alles"
         }
       ]
     },
     {
       "slug": "italien",
-      "order": 9,
+      "order": 6,
       "sourceDir": "DDer schönste urlaub in italien, sorrento, taormina , vorallem stromboli, viel wein (auch viel tetrapack) aber ncoh mehr momente und erinnerungen ",
       "assets": [
         {
@@ -443,19 +463,22 @@
           "file": "IMG_0389.jpeg",
           "type": "image",
           "role": "hero",
+          "sourceDir": "DDer schönste urlaub in italien, sorrento, taormina , vorallem stromboli, viel wein (auch viel tetrapack) aber ncoh mehr momente und erinnerungen ",
           "rotate": -90
         },
         {
           "id": "italien-02",
           "file": "IMG_0392.jpeg",
           "type": "image",
-          "role": "main"
+          "role": "main",
+          "sourceDir": "DDer schönste urlaub in italien, sorrento, taormina , vorallem stromboli, viel wein (auch viel tetrapack) aber ncoh mehr momente und erinnerungen "
         },
         {
           "id": "italien-03",
           "file": "IMG_0393.jpeg",
           "type": "image",
           "role": "hero",
+          "sourceDir": "DDer schönste urlaub in italien, sorrento, taormina , vorallem stromboli, viel wein (auch viel tetrapack) aber ncoh mehr momente und erinnerungen ",
           "rotate": -90
         },
         {
@@ -463,13 +486,43 @@
           "file": "sorrento jakuzi.jpeg",
           "type": "image",
           "role": "main",
+          "sourceDir": "DDer schönste urlaub in italien, sorrento, taormina , vorallem stromboli, viel wein (auch viel tetrapack) aber ncoh mehr momente und erinnerungen ",
           "rotate": -90
         },
         {
           "id": "italien-05",
           "file": "unser jakuzzi in sorrento und wein traumhaft schön   .mp4",
           "type": "video",
-          "role": "hero"
+          "role": "hero",
+          "sourceDir": "DDer schönste urlaub in italien, sorrento, taormina , vorallem stromboli, viel wein (auch viel tetrapack) aber ncoh mehr momente und erinnerungen "
+        }
+      ]
+    },
+    {
+      "slug": "schule",
+      "order": 7,
+      "sourceDir": "Schule und unser Abitur",
+      "assets": [
+        {
+          "id": "schule-02",
+          "file": "IMG_0332.jpeg",
+          "type": "image",
+          "role": "main",
+          "sourceDir": "Schule und unser Abitur"
+        },
+        {
+          "id": "schule-03",
+          "file": "IMG_0387.jpeg",
+          "type": "image",
+          "role": "hero",
+          "sourceDir": "Schule und unser Abitur"
+        },
+        {
+          "id": "schule-01",
+          "file": "IMG_0285.heic",
+          "type": "image",
+          "role": "hero",
+          "sourceDir": "Schule und unser Abitur"
         }
       ]
     }

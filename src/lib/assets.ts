@@ -28,14 +28,17 @@ export function withBase(relPath: string): string {
   return base.replace(/\/$/, "") + "/" + relPath.replace(/^\//, "");
 }
 
+/** Manifest order is the curated running order — never re-sort it. */
 export function assetsForChapter(chapter: string): MediaAsset[] {
-  return manifest.assets
-    .filter((a) => a.chapter === chapter)
-    .sort((a, b) => a.id.localeCompare(b.id));
+  return manifest.assets.filter((a) => a.chapter === chapter);
 }
 
 export function assetsByRole(chapter: string, role: Role): MediaAsset[] {
   return assetsForChapter(chapter).filter((a) => a.role === role);
+}
+
+export function assetById(id: string): MediaAsset | undefined {
+  return manifest.assets.find((a) => a.id === id);
 }
 
 export const allAssets = manifest.assets;

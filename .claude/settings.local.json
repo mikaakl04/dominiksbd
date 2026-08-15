@@ -2,7 +2,15 @@
   "permissions": {
     "allow": [
       "Bash(git init *)",
-      "Bash(git config *)"
+      "Bash(git config *)",
+      "mcp__claude-in-chrome__navigate",
+      "Bash(gh api *)",
+      "Bash(gh workflow *)",
+      "Bash(gh run *)",
+      "Bash(curl -s -o /dev/null -w \"HTML: %{http_code}\\\\n\" https://mikaakl04.github.io/dominiksbd/)",
+      "Bash(curl -s https://mikaakl04.github.io/dominiksbd/)",
+      "Bash(magick montage *)",
+      "Bash(echo ok *)"
     ]
   }
 }
