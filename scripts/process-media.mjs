@@ -50,6 +50,7 @@ for (const chapter of manifest.chapters) {
       type: asset.type,
       role: asset.role,
       note: asset.note ?? null,
+      hidden: asset.hidden ?? undefined,
       originalFilename: asset.file,
       originalFolder: asset.sourceDir ?? chapter.sourceDir,
     };

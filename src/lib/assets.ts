@@ -19,6 +19,8 @@ export interface MediaAsset {
   height?: number;
   orientation?: "landscape" | "portrait";
   duration?: number;
+  /** Kept in the manifest (source completeness), but not shown — a near-duplicate shot. */
+  hidden?: boolean;
 }
 
 const manifest = manifestRaw as unknown as { assets: MediaAsset[] };
@@ -30,7 +32,7 @@ export function withBase(relPath: string): string {
 
 /** Manifest order is the curated running order — never re-sort it. */
 export function assetsForChapter(chapter: string): MediaAsset[] {
-  return manifest.assets.filter((a) => a.chapter === chapter);
+  return manifest.assets.filter((a) => a.chapter === chapter && !a.hidden);
 }
 
 export function assetsByRole(chapter: string, role: Role): MediaAsset[] {

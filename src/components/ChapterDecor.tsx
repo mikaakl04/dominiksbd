@@ -36,16 +36,6 @@ export default function ChapterDecor({ slug }: { slug: ThemeKey }) {
           <path d="M18 70 H42 M12 108 H48 M6 150 H54" stroke="currentColor" strokeWidth="1" />
         </svg>
 
-        {/* Croissant */}
-        <svg className="decor-sticker decor-sticker--croissant" viewBox="0 0 100 64" fill="none">
-          <path
-            d="M12 44 Q6 30 18 24 Q34 15 50 15 Q66 15 82 24 Q94 30 88 44 Q80 38 70 40 Q60 30 50 30 Q40 30 30 40 Q20 38 12 44 Z"
-            fill="currentColor"
-            opacity="0.9"
-          />
-          <path d="M32 38 Q40 26 50 26 Q60 26 68 38" stroke="#8a5a1e" strokeWidth="1.6" opacity="0.5" fill="none" />
-        </svg>
-
         {/* Baguette */}
         <svg className="decor-sticker decor-sticker--baguette" viewBox="0 0 120 40" fill="none">
           <rect x="6" y="12" width="108" height="17" rx="8.5" fill="currentColor" opacity="0.9" />

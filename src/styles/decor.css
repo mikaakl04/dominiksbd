@@ -69,12 +69,6 @@
   opacity: 0.55;
   filter: drop-shadow(0 6px 14px rgba(0, 0, 0, 0.45));
 }
-.decor-sticker--croissant {
-  width: clamp(64px, 8vw, 108px);
-  top: 22rem;
-  right: 12%;
-  animation: stickerFloat 13s ease-in-out infinite;
-}
 .decor-sticker--baguette {
   width: clamp(90px, 11vw, 150px);
   bottom: 22%;
@@ -376,11 +370,6 @@
   }
   .decor-sticker {
     opacity: 0.32;
-  }
-  .decor-sticker--croissant {
-    top: auto;
-    bottom: 30%;
-    right: 4%;
   }
   .decor-sticker--wine {
     display: none;

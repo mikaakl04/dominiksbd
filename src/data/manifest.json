@@ -181,7 +181,8 @@
       "duration": 3.5,
       "width": 720,
       "height": 1280,
-      "orientation": "portrait"
+      "orientation": "portrait",
+      "hidden": true
     },
     {
       "id": "winter-07",
@@ -277,8 +278,8 @@
     },
     {
       "id": "winter-10",
-      "chapter": "winter",
-      "order": 2,
+      "chapter": "paris",
+      "order": 5,
       "type": "image",
       "role": "archive",
       "note": "aside",
@@ -792,7 +793,8 @@
       "srcWebp": "media/images/paris-07.webp",
       "width": 750,
       "height": 1334,
-      "orientation": "portrait"
+      "orientation": "portrait",
+      "hidden": true
     },
     {
       "id": "paris-08",

@@ -94,7 +94,8 @@
           "file": "136C885C-42FD-4075-9100-926EA8C07E8A.mp4",
           "type": "video",
           "role": "hero",
-          "sourceDir": "Die geilsten Winter (kalt, eis\"laufen\" eher rutschen lachen, snowboard (auf altem skateboard ohne rollen, trinken und chillen während corona virus"
+          "sourceDir": "Die geilsten Winter (kalt, eis\"laufen\" eher rutschen lachen, snowboard (auf altem skateboard ohne rollen, trinken und chillen während corona virus",
+          "hidden": true
         },
         {
           "id": "winter-07",
@@ -137,14 +138,6 @@
           "type": "video",
           "role": "supporting",
           "sourceDir": "Die geilsten Winter (kalt, eis\"laufen\" eher rutschen lachen, snowboard (auf altem skateboard ohne rollen, trinken und chillen während corona virus"
-        },
-        {
-          "id": "winter-10",
-          "file": "IMG_0371.jpeg",
-          "type": "image",
-          "role": "archive",
-          "sourceDir": "Die geilsten Winter (kalt, eis\"laufen\" eher rutschen lachen, snowboard (auf altem skateboard ohne rollen, trinken und chillen während corona virus",
-          "note": "aside"
         }
       ]
     },
@@ -398,7 +391,8 @@
           "file": "IMG_0377.jpeg",
           "type": "image",
           "role": "main",
-          "sourceDir": "Zusammen in Paris, italien anfrueern , stadt erkunden versaille, eifffelturm usw. eigetnlich alles"
+          "sourceDir": "Zusammen in Paris, italien anfrueern , stadt erkunden versaille, eifffelturm usw. eigetnlich alles",
+          "hidden": true
         },
         {
           "id": "paris-08",
@@ -450,6 +444,14 @@
           "type": "image",
           "role": "supporting",
           "sourceDir": "Zusammen in Paris, italien anfrueern , stadt erkunden versaille, eifffelturm usw. eigetnlich alles"
+        },
+        {
+          "id": "winter-10",
+          "file": "IMG_0371.jpeg",
+          "type": "image",
+          "role": "archive",
+          "sourceDir": "Die geilsten Winter (kalt, eis\"laufen\" eher rutschen lachen, snowboard (auf altem skateboard ohne rollen, trinken und chillen während corona virus",
+          "note": "aside"
         }
       ]
     },
