@@ -3,7 +3,6 @@ import type { ChapterContent } from "../data/content";
 import { themes } from "../data/themes";
 import { assetsForChapter } from "../lib/assets";
 import MediaTile from "./MediaTile";
-import Particles from "./Particles";
 import ChapterDecor from "./ChapterDecor";
 
 interface Props {
@@ -57,7 +56,6 @@ export default function Chapter({ content, onOpenLightbox }: Props) {
 
   return (
     <section id={`chapter-${content.slug}`} className="chapter" data-theme={content.slug} style={style}>
-      <Particles type={theme.particle} color={theme.particleColor} />
       {theme.vignette && theme.vignette !== "none" && (
         <div className={`chapter__vignette chapter__vignette--${theme.vignette}`} aria-hidden="true" />
       )}

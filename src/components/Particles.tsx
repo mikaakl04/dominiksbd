@@ -1,5 +1,8 @@
 import { useEffect, useRef } from "react";
 import type { ParticleType } from "../data/themes";
+import { themes } from "../data/themes";
+import type { ThemeKey } from "../data/content";
+import { chapters } from "../data/content";
 
 interface Props {
   type: ParticleType;
@@ -384,4 +387,21 @@ export default function Particles({ type, color }: Props) {
   if (type === "none") return null;
 
   return <canvas ref={ref} className="particles-canvas" aria-hidden="true" />;
+}
+
+/**
+ * One viewport-sized canvas for the whole page, following whichever chapter is
+ * in view.
+ *
+ * Previously each chapter owned a canvas stretched to its full height — with
+ * chapters running 8000px+ on a phone that added up to ~175MB of backing store
+ * and took the tab down. Fixed to the viewport it costs a few MB total.
+ */
+export function ChapterParticles({ slug }: { slug: string }) {
+  const theme = themes[slug as ThemeKey] ?? themes[chapters[0].slug];
+  return (
+    <div className="particles-layer" aria-hidden="true">
+      <Particles key={theme.particle} type={theme.particle} color={theme.particleColor} />
+    </div>
+  );
 }
